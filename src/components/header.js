@@ -14,10 +14,11 @@ const NavWrapper = styled.div`
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 0 1.875rem;
+  
 `
 const LogoLink = styled(Link)`
 text-decoration: none;
+
 font-size: 18;
 color: black;
 `
@@ -39,19 +40,22 @@ color: black;
 font-weight: 700;
 
 `
-
 const Header = ({ siteTitle }) => {
   return (
     <NavContainer>
       <NavWrapper>
-        <h1>
+      
+      <h1>
           <LogoLink to="/">{siteTitle}</LogoLink>
         </h1>
+      
+     
 
           <LinkContainer>
+          
          <NavItems > <NavItem href="/#about">About</NavItem></NavItems> 
          <NavItems > <NavItem href="/#"> Projects </NavItem> </NavItems> 
-         <NavItems > <NavItem href="/#"> Skills </NavItem></NavItems> 
+          
          
          <NavItems > <NavItem href="/blog"> Blog </NavItem></NavItems> 
 

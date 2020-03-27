@@ -19,7 +19,7 @@ height: 100%;
 const Container = styled.div`
   max-width: 1140px;
   margin: 0 auto;
-  text-align: center;
+  
   
 `
 const Footer = styled.footer`
@@ -44,7 +44,7 @@ const Layout = ({ children }) => {
 
           {children}
           <Footer>
-            © {new Date().getFullYear()}, Built with
+            © {new Date().getFullYear()} Richard Luong, Built with
             {` `}
             <a href="https://www.gatsbyjs.org">Gatsby</a>
           </Footer>
