@@ -11,13 +11,13 @@ const ImageContainer = styled.div`
   margin: 0 auto;
 `
 
-const SectionContainer = styled.div`
+const HeadContainer = styled.div`
   position: relative;
   text-align: center;
   margin-bottom: 50px;
 `
 
-const AboutContainer = styled.div`
+const BodyContainer = styled.div`
   width: 100%;
   padding: 75px 0;
   background-color: rgb(247, 250, 252);
@@ -25,14 +25,14 @@ const AboutContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
 `
-const AboutRow = styled.div`
+const BodyRow = styled.div`
   text-align: center;
   width: 100%;
   padding: 25px 0;
   font-size: 24px;
 
 `
-const AboutCol = styled.div`
+const BodyCol = styled.div`
   position: relative;
   width: 30%;
   padding: 0 15px;
@@ -45,7 +45,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
 
-    <SectionContainer>
+    <HeadContainer>
       <ImageContainer>
         <Image />
       </ImageContainer>
@@ -66,19 +66,20 @@ const IndexPage = () => (
       >
         <FaGithubSquare size="64px" />
       </a>
-    </SectionContainer>
+    </HeadContainer>
 
-    <AboutContainer id="about">
+   
+    <BodyContainer id="about">
       
-      <AboutRow>
+      <BodyRow>
       <h2> About Me</h2>
-      </AboutRow>
-        <AboutCol>
-          <img src="https://picsum.photos/360/540" alt="placeholder image" />
+      </BodyRow>
+        <BodyCol>
+          <img src="https://picsum.photos/360/540" alt="placeholder" />
 
-        </AboutCol>
+        </BodyCol>
 
-          <AboutCol>
+          <BodyCol>
           <p>
             I'm an aspiring software engineer based in the San Francisco Bay
             Area. I'm passionate about solving difficult problems and building
@@ -97,10 +98,26 @@ const IndexPage = () => (
               In my free time, I love to explore the San Francisco Bay Area with my friends. I also enjoy watching
               sports, discovering new music, and finding the next wave in fashion.
             </p>
-          </AboutCol>
+          </BodyCol>
 
       
-    </AboutContainer>
+    </BodyContainer>
+
+
+
+<BodyContainer id='projects'>
+<BodyRow>
+      <h2> Projects</h2>
+      </BodyRow>
+
+
+
+</BodyContainer>
+
+
+
+
+
   </Layout>
 )
 

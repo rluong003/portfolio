@@ -54,7 +54,7 @@ const Header = ({ siteTitle }) => {
           <LinkContainer>
           
          <NavItems > <NavItem href="/#about">About</NavItem></NavItems> 
-         <NavItems > <NavItem href="/#"> Projects </NavItem> </NavItems> 
+         <NavItems > <NavItem href="/#projects"> Projects </NavItem> </NavItems> 
           
          
          <NavItems > <NavItem href="/blog"> Blog </NavItem></NavItems> 
