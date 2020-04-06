@@ -26,12 +26,13 @@ const BlogBody = styled.div`
 
 const SecondPage = ({ data }) => (
   <Layout>
-    <SEO title="Page two" />
+    <SEO title="Blog" />
     <div>
       <h1>Posts</h1>
 
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <BlogBody key={node.id}>
+        <SEO title={node.frontmatter.title} />
           <BlogLink to={`/blog` + node.fields.slug}>
             <BlogTitle>
               {node.frontmatter.title} <span> - {node.frontmatter.date} </span>
